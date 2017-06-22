@@ -1,3 +1,4 @@
+/*Navigation CSS for all 3 html files*/
 nav{
 	padding: 20px;
 	background-color: #ffffff;
@@ -10,7 +11,9 @@ nav{
 
 .navbar-default{
 	background-color: #ffffff;
-	border-bottom: 5px solid lightgray;
+	border-bottom: 3px solid lightgrey;
+	margin-top: -41.2px;
+	height: 140px;
 }
 
 .navbar-default .navbar-brand{
@@ -22,7 +25,7 @@ nav{
 	font-size: 40px;
 	font-weight: bold;
 	background-color: #4aaaa5;
-	padding: 40px;
+	padding: 47.6px;
 	position: relative;
 	top: 20.5px;
 	line-height: 0px;
@@ -37,6 +40,8 @@ nav{
 	margin-top: 20px;
 	font-family: Arial;
 	font-size: 16px;
+	margin-top: 41px;
+	margin-bottom: -20px;
 }
 
 .page-header{
@@ -52,9 +57,19 @@ nav{
 	color: #4aaaa5
 }
 
+.About{
+	border-right: 1px solid #f2f2f2;
+}
+
+.Portfolio{
+	border-right: 1px solid #f2f2f2;
+}
+
+/*General CSS*/
+
 body{
 	background-color: #f7f7f7;
-	background-image: url(http://orig10.deviantart.net/2859/f/2017/170/9/7/vertical_waves_by_ismenis-dbdakmi.png);
+	background-image: url("../images/waves.png");
 	background-repeat: repeat;
 }
 
@@ -67,10 +82,14 @@ body{
 
 .col-md-3{
 	background: #ffffff;
-	position: relative;
-	left: -40px;
 	text-align: center;
 	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.connectwithme{
+	border-bottom: 1px solid #f2f2f2;
+	line-height: 50px;
 }
 
 h3{
@@ -78,20 +97,59 @@ h3{
 }
 
 .thumbnail{
-	position: relative;
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	float: left;
-	margin-top: 20px;
-	margin-left: 5px;
+	margin-top: 12px;
+	margin-left: 6px;
+	position: relative;
+	left: 0px;
 }
 
-.img{
-	float: left;
-	width: 300px;
-	height: 300px;
-	margin-left: 50px;
+/*Portfolio Page*/
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  margin-left: 50px;
+  overflow: auto;
 }
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+/*Portfolio Page end*/
+
+/*About me*/
 
 .profilepic{
 	width: 200px;
@@ -106,6 +164,8 @@ h3{
 	font-size: 16px;
 }
 
+/*Contact Page*/
+
 .btn-primary{
 	background-color: #4aaaa5;
 	margin-bottom: 20px
@@ -116,6 +176,8 @@ h3{
 	color:  #777777;
 	font-family: Arial;
 }
+
+/*Sticky Footer*/
 
 html {
     position: relative;
@@ -142,4 +204,68 @@ footer{
 	font-family: Arial;
 	line-height: 101px;
 	margin-bottom: -20px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 980px) {
+  body{
+    background: url("../images/waves.png"); 
+	}	
+
+	.col-md-8{
+		width: 65%;
+		position: relative;
+		left: -20px;
+	}
+
+	.col-md-3{
+		width: 35%;
+		position: relative;
+		left: 20px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background: url("../images/waves.png"); 
+	}	
+
+	.col-md-8{
+		width: 95%;
+		position: relative;
+		left: 18px;
+	}
+
+	.col-md-3{
+		width: 95%;
+		position:relative;
+		top: -30px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+  body{
+    background: url("../images/waves.png"); 
+	}
+
+	.col-md-8{
+		width: 92%;
+		position: relative;
+		left: 23px;
+	}
+
+	.col-md-3{
+		width: 92%;
+	}
+
+	.navbar-brand{
+		width: 100%
+	}
+
+	.navbar-default{
+		width: 100%
+	}
+
 }
